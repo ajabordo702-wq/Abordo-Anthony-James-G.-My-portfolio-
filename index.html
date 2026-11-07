@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Personal portfolio of Anthony James Abordo">
+<title>AJ | Personal Portfolio</title>
+<style>
+:root{--navy:#102943;--blue:#83a9cc;--ink:#182332;--muted:#657386;--paper:#f5f7fa;--white:#fff}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e5eaf0}
+.nav{max-width:1150px;margin:auto;padding:15px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font-family:Georgia,serif;font-size:28px;font-weight:bold;letter-spacing:2px;color:var(--navy);text-decoration:none}
+nav{display:flex;gap:24px;flex-wrap:wrap}
+nav a{font-size:13px;text-decoration:none;color:#344256;font-weight:700;letter-spacing:.5px}
+nav a:hover{color:#6594bd}
+section{max-width:1150px;margin:auto;padding:82px 24px}
+.hero{min-height:620px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:55px}
+.eyebrow{text-transform:uppercase;letter-spacing:4px;color:#7895b3;font-size:12px;font-weight:bold}
+h1{font:clamp(48px,7vw,86px)/.98 Georgia,serif;color:var(--navy);margin:18px 0}
+.hero p{font-size:17px;color:var(--muted);max-width:520px}
+.hero-photo{width:100%;max-height:570px;object-fit:cover;object-position:center 24%;border-radius:4px;box-shadow:20px 20px 0 #dce6ef}
+.btn{display:inline-block;margin-top:18px;padding:13px 22px;background:var(--navy);color:white;text-decoration:none;font-size:12px;font-weight:bold;letter-spacing:1.5px;border-radius:2px}
+.section-head{margin-bottom:32px}
+h2{font:clamp(34px,5vw,48px)/1.1 Georgia,serif;color:var(--navy);margin:8px 0}
+.lead{color:var(--muted);max-width:680px}
+.about-grid{display:grid;grid-template-columns:220px 1fr;gap:38px;align-items:center;background:white;padding:32px;border:1px solid #e8edf2}
+.logo{width:100%;max-width:210px;display:block;margin:auto}
+.about-grid p{color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.skill{background:white;padding:22px;border:1px solid #e6ebf0}
+.skill b{display:block;color:var(--navy);margin-bottom:6px}
+.skill span{font-size:14px;color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.project{background:white;border:1px solid #e7ebef;overflow:hidden}
+.project img{width:100%;height:340px;object-fit:contain;background:#e9edf1;display:block}
+.project-info{padding:20px 22px}
+.project-info h3{margin:0 0 6px;color:var(--navy);font:24px Georgia,serif}
+.project-info p{margin:0;color:var(--muted);font-size:14px}
+.contact-box{background:var(--navy);color:white;padding:42px}
+.contact-box h2{color:white}
+.contact-box p{color:#d8e2ec}
+footer{text-align:center;padding:25px;color:#758295;font-size:12px}
+@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column}.nav nav{gap:14px}.hero{grid-template-columns:1fr;min-height:auto;padding-top:55px}.hero-photo{max-height:470px;max-width:480px}.about-grid{grid-template-columns:1fr;text-align:center}.skills{grid-template-columns:1fr 1fr}.projects{grid-template-columns:1fr}.project img{height:auto;max-height:520px}}
+@media(max-width:420px){nav{gap:10px}nav a{font-size:11px}.skills{grid-template-columns:1fr}section{padding:60px 18px}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<a class="brand" href="#home">AJ.</a>
+<nav><a href="#home">HOME</a><a href="#about">ABOUT ME</a><a href="#portfolio">PORTFOLIO</a><a href="#skills">SKILLS</a><a href="#contact">CONTACT</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home">
+<div>
+<div class="eyebrow">Personal Portfolio · 2026</div>
+<h1>Anthony James<br>Abordo</h1>
+<p>Hello! Welcome to my personal portfolio. I am a student who enjoys learning, exploring creative ideas, and improving my skills. This website showcases a little about me and the activities and projects I have created.</p>
+<a class="btn" href="#portfolio">VIEW MY ACTIVITIES</a>
+</div>
+<img class="hero-photo" src="images/magazine-cover.png" alt="Anthony James Abordo personal magazine cover">
+</section>
+<section id="about">
+<div class="section-head"><div class="eyebrow">Get to know me</div><h2>About Me</h2></div>
+<div class="about-grid">
+<img class="logo" src="images/aj-logo.jpg" alt="AJ Ambition logo">
+<div><h3>Hi, I'm AJ!</h3>
+<p>My name is Anthony James Abordo. I am a student who is still learning and discovering new things, especially in creativity and technology. I enjoy making designs, working on school activities, and turning ideas into visual projects.</p>
+<p>This portfolio is a collection of my outputs and learning experiences. Each activity represents my effort to practice, improve, and develop my abilities.</p></div>
+</div>
+</section>
+<section id="portfolio">
+<div class="section-head"><div class="eyebrow">My works and outputs</div><h2>My Activities & Projects</h2><p class="lead">Here are the activities and designs I have worked on. The images below are the actual outputs I shared.</p></div>
+<div class="projects">
+<article class="project"><img src="images/magazine-cover.png" alt="Personal magazine cover activity"><div class="project-info"><h3>Personal Magazine Cover</h3><p>A personal magazine cover featuring my name, photo, and a short introduction about my personality and dreams.</p></div></article>
+<article class="project"><img src="images/aj-logo.jpg" alt="AJ Ambition logo activity"><div class="project-info"><h3>Logo Design</h3><p>A logo design using the AJ initials as the main identity for my clothing brand concept.</p></div></article>
+<article class="project"><img src="images/website-wireframe.png" alt="Website portfolio wireframe activity"><div class="project-info"><h3>Website Wireframe</h3><p>A hand-drawn website plan showing the navigation flow and layout for Home, About Me, Portfolio, Project Details, Skills, and Contact pages.</p></div></article>
+<article class="project"><img src="images/clothing-poster.png" alt="Clothing brand poster activity"><div class="project-info"><h3>Clothing Brand Poster</h3><p>A promotional clothing brand poster presenting the brand concept, slogan, and visual identity.</p></div></article>
+<article class="project"><img src="images/new-collection.png" alt="New clothing collection promotion activity"><div class="project-info"><h3>New Collection Promotion</h3><p>A product promotion layout featuring clothing designs, a new drop announcement, and brand highlights.</p></div></article>
+</div>
+</section>
+<section id="skills">
+<div class="section-head"><div class="eyebrow">What I can do</div><h2>My Skills</h2><p class="lead">These are skills I practice and continue to develop as a student.</p></div>
+<div class="skills">
+<div class="skill"><b>Creativity</b><span>Thinking of ideas and creating visual designs.</span></div>
+<div class="skill"><b>Basic Computer Skills</b><span>Using a computer and working with digital tools.</span></div>
+<div class="skill"><b>Teamwork</b><span>Working and sharing ideas with classmates.</span></div>
+<div class="skill"><b>Communication</b><span>Sharing information and expressing ideas clearly.</span></div>
+<div class="skill"><b>Time Management</b><span>Organizing tasks and completing activities.</span></div>
+<div class="skill"><b>Willingness to Learn</b><span>Practicing new skills and improving through feedback.</span></div>
+</div>
+</section>
+<section id="contact">
+<div class="contact-box"><div class="eyebrow" style="color:#a9c5df">Let's connect</div><h2>Contact</h2><p>Thank you for visiting my personal portfolio! You can contact me through my school or personal contact details.</p><p><b>Name:</b> Anthony James Abordo</p></div>
+</section>
+</main>
+<footer>© 2026 Anthony James Abordo · Personal Portfolio</footer>
+</body></html>
